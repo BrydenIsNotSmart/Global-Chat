@@ -1,0 +1,26 @@
+{
+  "name": "global-chat",
+  "version": "1.0.0",
+  "description": "The first global chat bot on Revolt.",
+  "main": "src/start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/start.js"
+  },
+  "keywords": [
+    "chatbot",
+    "globalchat"
+  ],
+  "author": "BrydenIsNotSmart",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/collection": "^1.5.1",
+    "@elara-services/eval-helper": "^1.1.1",
+    "dotenv": "^16.1.4",
+    "https": "^1.0.0",
+    "mongoose": "^7.2.2",
+    "revolt-uploader": "^1.1.1",
+    "revolt.js": "^7.0.0-beta.4",
+    "revoltbots.js": "^1.0.5"
+  }
+}

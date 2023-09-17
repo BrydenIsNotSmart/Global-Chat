@@ -1,0 +1,20 @@
+const Embed = require("../functions/embed");
+
+module.exports = {
+    name: "test",
+    aliases: ["t"],
+    category: "tesing",
+    description: "Information on the Bot.",
+    async run(client, message, args) {
+      try {
+        
+      } catch (err) {
+        console.error(err);
+        message.channel.stopTyping();
+        const embed = new Embed()
+        .setColor("#77b4d3")
+        .setDescription(`:x: There was an error while executing this command! \n\`\`\`js\n${err}\`\`\``)
+        await message.reply({ embeds: [embed] }, false);
+      }
+    },
+  };
